@@ -8,8 +8,12 @@ import { HousingService } from '../housing-service';
   imports: [CommonModule, HousingLocation],
   templateUrl: './home.html',
   styleUrl: './home.css'
-}) 
+})
 export class Home {
+  
   housingLocationList: HousingLocationInterface[] = [];
   housingService: HousingService = inject(HousingService);
+  constructor() {
+    this.housingLocationList = this.housingService.getAllHousingLocations();
+  }  
 }
