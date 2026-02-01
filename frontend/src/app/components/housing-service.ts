@@ -3,7 +3,7 @@ import { HousingLocationInterface } from './housing-location-interface';
 @Injectable({
   providedIn: 'root'
 })
-export class HousingService {
+export class HousingService{
   constructor() { }
   readonly baseUrl = 'https://angular.dev/assets/images/tutorials/common';
   housingLocationList: HousingLocationInterface[] = [
@@ -14,4 +14,8 @@ export class HousingService {
   getHousingLocantionById(id:number): HousingLocationInterface | undefined {
     return this.housingLocationList.find((housingLocation) => housingLocation.id === id);
   }
+  submitApplication(firstName:string, lastName:string, email:string){
+    console.log(`FirstName: ${firstName} - LastName: ${lastName} - Email: ${email}`)
+  }
 }
+
