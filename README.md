@@ -12,4 +12,4 @@ Entorno de desarrollo
 	
 Clonar el proyecto desde github  https://github.com/LauraLopezG/Ingenieria en cualquier parte del computador.
             
-Abrir el proyecto Ingenieria en Visual Studio Code.
+Abrir el proyecto Ingenieria/frontend en Visual Studio Code.
